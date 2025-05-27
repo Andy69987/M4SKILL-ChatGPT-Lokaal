@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+.toolbar button {
+  padding: 8px 12px;
+  background-color: #292929;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+}
+#shortcuts button {
+  padding: 6px 10px;
+  background-color: #00d1b2;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.chat-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+#chat-log {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+#chat-log li {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+.user {
+  background-color: #00d1b2;
+  color: black;
+  text-align: right;
+}
+.ai {
+  background-color: #292929;
+  text-align: left;
+}
+.error {
+  background-color: #ff3860;
+  color: white;
+  text-align: center;
+}
+.input-box {
+  display: flex;
+}
+#llm__input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+#llm__button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00d1b2;
+  color: black;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#loader {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  display: none;
+}
+.stealth #chat-log, .stealth .input-box {
+  display: none;
+}
